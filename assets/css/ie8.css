@@ -1,36 +1,47 @@
 /*
-	Identity by HTML5 UP
+	Multiverse by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* List */
+/* Button */
 
-	ul.icons li a {
-		-ms-behavior: url("assets/js/PIE.htc");
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		border: solid 2px #36383c;
 	}
 
-		ul.icons li a:before {
-			text-align: center;
-			font-size: 26px;
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special {
+			border: 0;
+		}
+
+/* Panel */
+
+	.panel {
+		background: #242629;
+		display: none;
+	}
+
+		.panel.active {
+			display: block;
+		}
+
+		.panel > .closer:before {
+			content: '\00d7';
+			font-size: 42px;
 		}
 
 /* Main */
 
-	#main {
-		-ms-behavior: url("assets/js/PIE.htc");
+	#main .thumb > h2 {
+		text-align: center;
+		width: 100%;
+		left: 0;
 	}
-
-		#main .avatar img {
-			-ms-behavior: url("assets/js/PIE.htc");
-		}
-
-/* Footer */
-
-	#footer {
-		color: #fff;
-	}
-
-		#footer .copyright li {
-			border-left: solid 1px #fff;
-		}

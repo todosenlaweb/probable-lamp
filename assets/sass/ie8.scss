@@ -4,24 +4,39 @@
 @import 'libs/skel';
 
 /*
-	Identity by HTML5 UP
+	Multiverse by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* List */
+/* Button */
 
-	ul {
-		&.icons {
-			li {
-				a {
-					-ms-behavior: url('assets/js/PIE.htc');
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		border: solid 2px _palette(border);
 
-					&:before {
-						text-align: center;
-						font-size: 26px;
-					}
-				}
+		&.special {
+			border: 0;
+		}
+	}
+
+/* Panel */
+
+	.panel {
+		background: _palette(bg);
+		display: none;
+
+		&.active {
+			display: block;
+		}
+
+		> .closer {
+			&:before {
+				content: '\00d7';
+				font-size: 42px;
 			}
 		}
 	}
@@ -29,23 +44,11 @@
 /* Main */
 
 	#main {
-		-ms-behavior: url('assets/js/PIE.htc');
-
-		.avatar {
-			img {
-				-ms-behavior: url('assets/js/PIE.htc');
-			}
-		}
-	}
-
-/* Footer */
-
-	#footer {
-		color: #fff;
-
-		.copyright {
-			li {
-				border-left: solid 1px #fff;
+		.thumb {
+			> h2 {
+				text-align: center;
+				width: 100%;
+				left: 0;
 			}
 		}
 	}
